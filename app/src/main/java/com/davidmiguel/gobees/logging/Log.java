@@ -18,7 +18,10 @@
 
 package com.davidmiguel.gobees.logging;
 
+<<<<<<< HEAD
 import com.crashlytics.android.Crashlytics;
+=======
+>>>>>>> master
 import com.davidmiguel.gobees.BuildConfig;
 
 import timber.log.Timber;
@@ -41,6 +44,7 @@ public class Log {
         if (BuildConfig.DEBUG) {
             Timber.plant(new DebugTree());
         }
+<<<<<<< HEAD
         // Log to Crashlytics
         Timber.plant(new CrashlyticsTree());
         // Attach build info
@@ -60,6 +64,8 @@ public class Log {
      */
     public static void setBuildDate(String date) {
         Crashlytics.setString("build_date", date);
+=======
+>>>>>>> master
     }
 
     /**
