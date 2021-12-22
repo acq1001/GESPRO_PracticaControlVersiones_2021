@@ -19,6 +19,7 @@
 package com.davidmiguel.gobees.logging;
 
 import com.crashlytics.android.Crashlytics;
+
 import com.davidmiguel.gobees.BuildConfig;
 
 import timber.log.Timber;
@@ -41,6 +42,9 @@ public class Log {
         if (BuildConfig.DEBUG) {
             Timber.plant(new DebugTree());
         }
+
+
+
         // Log to Crashlytics
         Timber.plant(new CrashlyticsTree());
         // Attach build info
