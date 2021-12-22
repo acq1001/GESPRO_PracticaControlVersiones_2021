@@ -276,7 +276,7 @@ sonarqube {
         property "sonar.java.coveragePlugin", "jacoco"
         property "sonar.jacoco.reportMissing.force.zero", true
     }
-<<<<<<< Updated upstream
+
 }
 
 /**
